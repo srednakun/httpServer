@@ -17,7 +17,6 @@ file.readFile('./index.html', function(err, data)
 	//if there is an error exit the server
 	if (err) throw err;
 	htmlFile = data;
-
 });
 
 var errorFile = null;
@@ -29,7 +28,6 @@ file.readFile('./error.html', function(err, data)
 
 });
 	
-
 var httpHandler = function(request, response) {
 	
 	if (request.url === "/")
@@ -43,7 +41,6 @@ var httpHandler = function(request, response) {
 		response.writeHead(404, {"content-Type": "text/html"});
 		response.write(errorFile);
 		response.end();
-
 	}
 }
 
