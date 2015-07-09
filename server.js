@@ -1,8 +1,4 @@
-/*
-author: Sredna Kunowski 7/7/2015
-
-A simple HTTP server that will open up index.html or error.html.
-*/
+/*author: Sredna Kunowski 7/7/2015*/
 
 //node includes http methods and file system methods
 var http = require("http");
